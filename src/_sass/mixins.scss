@@ -1,0 +1,68 @@
+$bg-color: #131517 !default;
+$dark-blue: #23262f !default;
+$dark-black: #0a0d10 !default;
+$cards-bg: #18191d !default;
+$cards-footer: #1b1c1f !default;
+$svg-stroke: #9f9f9f !default;
+$dropdownbg: #24252b !default;
+$seemore: #292a30 !default;
+$divider-line: #2b2c33 !default;
+$green-lite: #7ffc8d !default;
+$green-dark: #7fba7a !default;
+$green-medium: #c6fa56 !default;
+$nav-title: #808191 !default;
+$hr-line: #e4e4e4 !default;
+$red-lite: #ff754c !default;
+$red-medium: #ff544d !default;
+$orange-color: #f7931a !default;
+$blue-color: #627eea !default;
+$yellow-color: #f3ba2f !default;
+$green-color: #3ff47d !default;
+$red-color: #ff3f3f !default;
+$backdrop: #131313 !default;
+$modalContent: #1e1f24 !default;
+
+// scss-docs-start colors-map
+$colors: (
+  'bgcolor': $bg-color
+) !default;
+// scss-docs-end colors-map
+
+// scss-docs-start theme-color-variables
+$primary: $bg-color !default;
+// scss-docs-end theme-color-variables
+@mixin eudoxussans {
+  font-family: 'eudoxus sans', sans-serif;
+}
+@mixin gradient($direction, $color1, $color2) {
+  background: transparent -webkit-linear-gradient($direction, $color1 28.53%, $color2 140.05%);
+  background: transparent -moz-linear-gradient($direction, $color1 28.53%, $color2 140.05%);
+  background: transparent -o-linear-gradient($direction, $color1 28.53%, $color2 140.05%);
+  background: transparent linear-gradient($direction, $color1 28.53%, $color2 140.05%);
+}
+@mixin gradientmenu($direction, $color1, $color2) {
+  background: transparent -webkit-linear-gradient($direction, $color1 -28.53%, $color2 140.05%);
+  background: transparent -moz-linear-gradient($direction, $color1 -28.53%, $color2 140.05%);
+  background: transparent -o-linear-gradient($direction, $color1 -28.53%, $color2 140.05%);
+  background: transparent linear-gradient($direction, $color1 -28.53%, $color2 140.05%);
+}
+@mixin gradientred($direction, $color1, $color2) {
+  background: transparent -webkit-linear-gradient($direction, $color1 0%, $color2 100%);
+  background: transparent -moz-linear-gradient($direction, $color1 0%, $color2 100%);
+  background: transparent -o-linear-gradient($direction, $color1 0%, $color2 100%);
+  background: transparent linear-gradient($direction, $color1 0%, $color2 100%);
+}
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+  :-moz-placeholder {
+    @content;
+  }
+  ::-moz-placeholder {
+    @content;
+  }
+  :-ms-input-placeholder {
+    @content;
+  }
+}
